@@ -24,6 +24,7 @@ public class LinkedList {
 
         Node node = new Node(val, tmp.next);
         tmp.next = node;
+        size++;
     }
 
     public void insertFirst(int val) {
