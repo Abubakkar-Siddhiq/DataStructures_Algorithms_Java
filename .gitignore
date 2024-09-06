@@ -1,0 +1,74 @@
+# Java specific
+*.class
+*.jar
+*.war
+*.ear
+*.db
+*.log
+
+# Eclipse specific
+.project
+.classpath
+.settings/
+bin/
+
+# IntelliJ IDEA specific
+.idea/
+*.iml
+*.iws
+out/
+
+# NetBeans specific
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+*.nb-gradle
+
+# Maven specific
+target/
+!target/*.jar
+!target/*.war
+
+# Gradle specific
+.gradle/
+build/
+!build/libs/
+!build/*.jar
+!build/*.war
+
+# Other IDEs
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Log files
+*.log
+
+# Java compiler specific
+*.class
+
+# Package Manager
+*.jar
+
+# Compiled class file
+*.class
+
+# Temporary files
+*.tmp
+*.temp
+
+# Application specific
+*.sqlite
+*.sql
+*.db
+*.pdb
