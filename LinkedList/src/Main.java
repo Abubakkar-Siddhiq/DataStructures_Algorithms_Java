@@ -14,10 +14,9 @@ public class Main {
         ll.insertLast(3);
         ll.insertLast(4);
         ll.insertLast(5);
-        ll.insert(0, 0);
         ll.display();
-        System.out.println("Deleting!!");
-        ll.delete(4);
+        ll.insert(2, 0);
         ll.display();
+        System.out.println(ll.size());
     }
 }

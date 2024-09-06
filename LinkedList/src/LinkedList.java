@@ -19,7 +19,7 @@ public class LinkedList {
 
         Node tmp = head;
         for(int i=1; i < index; i++) {
-            tmp = head.next;
+            tmp = tmp.next;
         }
 
         Node node = new Node(val, tmp.next);
