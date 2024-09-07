@@ -128,13 +128,6 @@ public class DoublyLinkedList {
         }
     }
 
-    public void find() {
-
-    }
-
-//    public void get(int index) {
-//        if(inde)
-//    }
     public int size() {
         return size;
     }
