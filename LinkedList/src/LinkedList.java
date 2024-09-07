@@ -7,6 +7,8 @@ public class LinkedList {
 
     // Insert
     public void insert(int index, int val) {
+        if(index < 0 || index > size) return;
+
         if(index == 0) {
             insertFirst(val);
             return;
@@ -54,15 +56,15 @@ public class LinkedList {
 
     // Delete
     public void delete(int index){
-        if(index > size) return;
+        if(index < 0 || index >= size) return;
 
         if(index == 0) {
             deleteFirst();
             return;
         }
 
-        // second last is at index - 1
-        Node node = get(index);
+        // index - 1
+        Node node = get(index - 1);
         node.next = node.next.next;
         size--;
     }
@@ -77,24 +79,25 @@ public class LinkedList {
     }
 
     public void deleteLast(){
-        if(size <= 1) {
+        if(size == 0) return;
+
+        if(size == 1) {
             deleteFirst();
             return;
         }
-        Node node = get(size - 1);
+        
+        Node node = get(size - 2);
         node.next = null;
         size--;
     }
 
     // Other Methods
     private Node get(int index) {
+        if(index < 0 || index >= size) return null;
+
         Node node = head;
 
-        if(index > size) {
-            return null;
-        }
-
-        for(int i=0; i < index-1; i++) {
+        for(int i=0; i < index; i++) {
             node = node.next;
         }
 

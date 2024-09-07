@@ -15,7 +15,7 @@ public class Main {
         ll.insertLast(4);
         ll.insertLast(5);
         ll.display();
-        ll.insert(2, 0);
+        ll.deleteLast();
         ll.display();
         System.out.println(ll.size());
     }
