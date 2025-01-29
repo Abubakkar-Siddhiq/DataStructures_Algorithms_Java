@@ -1,25 +1,6 @@
 import java.util.Arrays;
 
 public class Main {
-    // Selection Sort
-    public static void selectionSort(int[] array) {
-        // Iterating over the array
-        for(int i=0; i < array.length-1; i++) {
-            // First element to be the min
-            int min = i;
-            // Iterating after first element
-            for(int j = i+1; j < array.length; j++) {
-                if(array[min] > array[j]) {
-                    min = j;
-                }
-            }
-
-            int tmp = array[i];
-            array[i] = array[min];
-            array[min] = tmp;
-        }
-    }
-
     // Merge Sort
     public static int[] mergeSort(int[] arr) {
         if(arr.length == 1) return arr;
@@ -63,6 +44,9 @@ public class Main {
 
         InsertionSort insertion = new InsertionSort();
         insertion.sort(Array);
+
+        SelectionSort selection = new SelectionSort();
+        selection.sort(Array);
 
         for(int i : Array) {
             System.out.print(i);
