@@ -11,7 +11,9 @@ public class Main {
 //        selection.sort(Array);
 
         Merge merge = new Merge();
-        System.out.println("Merge Sort: "+ Arrays.toString(merge.sort(Array)));
+//        System.out.println("Merge Sort: "+ Arrays.toString(merge.sort(Array)));
+        QuickSort quick = new QuickSort();
+        quick.sort(Array, 0, Array.length-1);
 
         for(int i : Array) {
             System.out.print(i);
